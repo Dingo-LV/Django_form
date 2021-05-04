@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Userlist</title>
+</head>
+<body>
+    <ul>
+        {% for user in object_list %}
+        <li>
+            ID {{ user.id }} <br>
+              &nbsp;&nbsp;User name {{ user.username }} <br>
+              &nbsp;&nbsp;E-mail {{ user.email }}  <br>
+
+
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
